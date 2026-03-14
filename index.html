@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two Player Trivia Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Two Player Trivia Battle</h1>
+
+<!-- Screen 1: Player Setup -->
+<div id="screen-player" class="screen">
+  <h2>Player Setup</h2>
+  <input type="text" id="player1" placeholder="Player 1 Name">
+  <input type="text" id="player2" placeholder="Player 2 Name">
+  <br>
+  <button id="startGame">Start Game</button>
+</div>
+
+<!-- Screen 2: Category Selection -->
+<div id="screen-category" class="screen hidden">
+  <h2 id="roundText"></h2>
+  <select id="categorySelect"></select>
+  <br>
+  <button id="startRound">Start Round</button>
+</div>
+
+<!-- Screen 3: Question Gameplay -->
+<div id="screen-question" class="screen hidden">
+  <p id="info"></p>
+  <p id="scores"></p>
+  <h3 id="questionText"></h3>
+  <div id="options"></div>
+  <button id="nextBtn" disabled>Next</button>
+</div>
+
+<!-- Screen 4: Round Summary -->
+<div id="screen-summary" class="screen hidden">
+  <h2>Round Completed</h2>
+  <button id="nextRound">Next Round</button>
+  <button id="endGame">End Game</button>
+</div>
+
+<!-- Screen 5: Final Result -->
+<div id="screen-final" class="screen hidden">
+  <h2>Final Result</h2>
+  <p id="finalResult"></p>
+  <button id="newGame">New Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

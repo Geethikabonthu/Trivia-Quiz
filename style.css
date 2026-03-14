@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.screen {
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+input, select {
+  padding: 6px;
+  margin: 6px;
+  width: 200px;
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#options button {
+  display: block;
+  width: 220px;
+  margin: 8px auto;
+}
